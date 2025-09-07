@@ -1,0 +1,153 @@
+.libertinus-serif-bold {
+  font-family: "Libertinus Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 5px;
+  }
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+	background-color: rgb(199, 52, 101);
+  color: white;
+  padding: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+	background-color: rgb(199, 52, 101);
+  color: white;
+  padding: 8px;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(170, 174, 219);
+}
+
+a:visited {
+  color: rgb(170, 174, 219);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(105, 111, 175);;
+}
+
+/*********** Splash Page ************************/
+header {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header h1 {
+  color: rgb(149, 30, 30);
+  
+}
+
+header img {
+  border: 12px solid rgb(199, 52, 101);
+  border-radius: 50%;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+}
+
+.tagline {
+  display: flex;
+  justify-content: center;
+}
+
+/************* Sections ********************/
+hr {
+  border-top: 1px dashed rgb(149, 30, 30);
+}
+
+section h3 {
+  color: rgb(149, 30, 30);
+}
+
+section dl {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+section ul {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+section a {
+  text-decoration: none;
+  color: rgb(170, 174, 219);
+}
+
+section a:hover {
+  text-decoration: underline;
+  color: rgb(105, 111, 175);
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.card img {
+  border: 12px solid rgb(199, 52, 101);
+  border-radius: 50%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr; 
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+}
+
+input {
+  color: rgb(149, 30, 30);
+}
+
+textarea {
+  color: rgb(149, 30, 30);
+}
